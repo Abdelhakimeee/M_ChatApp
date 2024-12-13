@@ -1,5 +1,5 @@
-    - after the push in gitHub I have block package.js .env .....   # I think gitignor library
-     .    .gitignore   loking the in frontend  (react-app)
+      -  @chakra-ui/button have error with it .
+       .  don't use it 
+    
 
-    - I have errors in  src in frontend     Fix it
 
