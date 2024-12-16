@@ -1,6 +1,5 @@
 import React from 'react';
-import { useEffect, useState, } from "react";
-// import { useHistory } from "react-router";
+import { useState } from "react";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
 import "./HomePage.scss";

@@ -1,3 +1,5 @@
+- jwt of managerOfSite , addming , user , ...  
+
 
 
 - end to do Style using Scss # using the sass to make style for project
