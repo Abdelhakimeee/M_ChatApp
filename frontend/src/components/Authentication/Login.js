@@ -21,7 +21,7 @@ const Login = () => {
       setLoading(false);
       return;
     }
-
+                 
     try {
       const config = {
         headers: {
@@ -33,10 +33,12 @@ const Login = () => {
         { email, password },
         config
       );
+
       alert("Login Successful");
       setUser(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
+      navigate('/chats');
     } catch (error) {
       alert(`Error Occurred: ${error.response?.data?.message || error.message}`);
       setLoading(false);
@@ -53,7 +55,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-
+        
         <label htmlFor="passwordLogin">Password:</label>
         <input
           id="passwordLogin" placeholder="Enter Your Password" type="password"

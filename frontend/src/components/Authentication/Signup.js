@@ -48,9 +48,7 @@ const Signup = () => {
       setLoading(false);
 
       // توجيه المستخدم إلى صفحة الدردشات
-      // navigate("/chats");
-      navigate("/");
-
+      navigate("/chats");
 
     } catch (error) {
       alert(`Error occurred: ${error.response?.data?.message || error.message}`);

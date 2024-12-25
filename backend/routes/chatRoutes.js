@@ -1,5 +1,4 @@
 const express = require("express");
-const { protect } = require("../middleware/authMiddleware");
 const {
     accessChat,
     fetchChats,
@@ -8,6 +7,7 @@ const {
     addToGroup,
     renameGroup,
 } = require("../controllers/chatControllers");
+const { protect } = require("../middleware/authMiddleware");
 
 const router = express.Router();
 
@@ -19,6 +19,3 @@ router.route("/groupremove").put(protect, removeFromGroup);
 router.route("/groupadd").put(protect, addToGroup);
 
 module.exports = router;
-
-    // "_id": "6769388d76d5548e7a94830f",
-            // "name": "Ab2223gabjbrwal",
